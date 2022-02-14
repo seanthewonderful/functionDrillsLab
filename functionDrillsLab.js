@@ -282,8 +282,15 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
-
+theEliminator=(a1,a2)=>{
+  for(i=0; i<a1.length; i++){
+    if(a2===a1[i]){
+      a1.splice([i], 1)
+    }
+  }return a1
+}
+theEliminator(contestants, loser)
+console.log(contestants)
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -292,8 +299,8 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
-
+uppers=(str)=> str.toUpperCase()
+console.log(uppers(sampleString))
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -306,14 +313,36 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+emailCheck=(email)=> {
+  String(email)
+  email.trim()
+  if(email.includes("@")){
+    return("email verified")
+  }else {
+    return("must provide a valid email address")
+  }
+}
+console.log(emailCheck("grunt@poop.com"))
+
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
-  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
-  Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
+  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as 
+  possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a 
+  single parameter, which is the amount of gold you are willing to spend. Your function should return a 
+  total amount of chocolate frogs you were able to purchase.
+  Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount 
+  of gold you are willing to spend.
 */
 
-//CODE HERE
+let gold = 100
 
+frogsForGold=(gold)=> {console.log(gold/3),
+  return frogsForGold
+}
+
+let totalFrogs = (`With ${gold} gold you can buy ${frogsForGold} frogs`)
+console.log(totalFrogs)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
