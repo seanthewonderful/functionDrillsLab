@@ -108,8 +108,9 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
+/*
 expression
-
+*/
 
 
 ////////////////// PROBLEM 8 ////////////////////
@@ -122,8 +123,9 @@ expression
 const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
-
-// arrow
+/*
+arrow
+*/
 // declaration
 // expression
 
@@ -134,7 +136,9 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+const exclaimThree = (str) => str.toUpperCase() + '!!!'
 
+console.log(exclaimThree("sean"))
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -148,8 +152,10 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
-// expression
+/*
+ declaration
+*/
+ // expression
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -161,8 +167,17 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
 
+let nameGreeting = function nameCheck(name){
+  if(name==="Steven"){
+    return("What is up Steven?")
+  }else if(name==="Bryan"){
+    return("Hey Bryan!")
+  }else {
+    return(`Cool name, ${name}!`)
+  }
+}
+console.log(nameGreeting("Sean"))
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -174,8 +189,19 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
-
+faveColorFinder = (color) => {
+  if(color==='red'){
+    return("red is a great color")
+  }else if(color==='green'){
+    return("green is a solid favorite color")
+  }else if(color==='black'){
+    return("so trendy")
+  }else{
+    return("you need to evaluate your favorite color choice")
+  }
+}
+let colorRating=faveColorFinder("blue...no, yellow!")
+console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -184,9 +210,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
-
-//CODE HERE
-
+function printAllNames(namesArr){
+//printAllNames = (namesArr) => {
+  for(i=0; i<length.namesArr; i++){
+    console.log(namesArr[i])
+  }
+}
+printAllNames()
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
