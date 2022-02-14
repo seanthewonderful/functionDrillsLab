@@ -35,11 +35,10 @@ console.log(jsNinja())
 */
 
 
-function printName(){
-  const name = prompt("Enter your name: ")
+function printName(name){
   console.log(name)
 }
-printName()
+printName("Sean")
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -52,8 +51,11 @@ printName()
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
-
+function greeting(name){
+  const nameStr = String(name)
+  console.log(`Hello, ${nameStr}`)
+}
+greeting(22)
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -66,8 +68,16 @@ printName()
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
-
+compareNums=(n1, n2)=>{
+  if(n1>n2){
+    console.log(`${n1} is greater than ${n2}`)
+  }else if(n1<n2){
+    console.log(`${n2} is greater than ${n1}`)
+  }else if(n1==n2){
+    console.log(n1)
+  }
+}
+compareNums(150, 151)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
