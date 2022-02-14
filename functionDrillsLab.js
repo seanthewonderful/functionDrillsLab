@@ -87,8 +87,13 @@ compareNums(150, 151)
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
-
+add=(n1,n2)=>{
+  n1=Number(n1)
+  n2=Number(n2)
+  return(n1+n2)
+}
+let sum = add(5,10)
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -103,7 +108,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+expression
 
 
 
