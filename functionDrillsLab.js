@@ -335,14 +335,15 @@ console.log(emailCheck("grunt@poop.com"))
   of gold you are willing to spend.
 */
 
-let gold = 100
-
-frogsForGold=(gold)=> {console.log(gold/3),
-  return frogsForGold
+function frogsForGold(gold) {
+  return gold/3
 }
+let gold = 100
+let totalFrogs = frogsForGold(gold)
 
-let totalFrogs = (`With ${gold} gold you can buy ${frogsForGold} frogs`)
+//(`With ${gold} gold you can buy ${frogsForGold} frogs`)
 console.log(totalFrogs)
+console.log(`With ${gold} gold you can buy ${totalFrogs} frogs`)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
