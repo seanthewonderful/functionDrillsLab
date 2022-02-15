@@ -347,20 +347,38 @@ console.log(`With ${gold} gold you can buy ${totalFrogs} frogs`)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
-  You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
+  You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, 
+  the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. 
+  You would just be able to purchase 1 product. Re-write the function you used in the previous problem 
+  (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and 
+  store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+function frogsForGold(gold) {
+  return Math.floor(gold/3)
+}
+
+console.log(totalFrogs)
 
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 /*
-  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
+  Write a function that takes in an array of numbers as an argument. In the body of the function, write 
+  logic to determine if the array is in ascending order. The function should return true, if it is sorted 
+  in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your 
+  function invoked. Use the sample array to test this function.
 */
 
-//CODE HERE
-
+let arrayIsAscending = function ascendOrder(sampleArray){
+  for(i=0; i<list.sampleArray; i++){
+    if(sampleArray[i]<sampleArray[i+1]){
+      return true
+    }else return false
+  }
+}
+console.log(ascendOrder(sampleArray))
+console.log(arrayIsAscending)
 
 ////////////////// PROBLEM 22 ////////////////////
 
